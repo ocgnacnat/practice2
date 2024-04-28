@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JS Functions and Events</title>
+</head>
+<body>
+	<div>
+		<form>
+			Enter 1st Number: <input type="number" id="num1">
+			<br /><br />
+			Enter 2nd Number: <input type="number" id="num2">
+			<br /><br />
+			<p id="result">ANSWER:</p>
+			<button type="button" onclick="plus()">ADD</button>
+			<button type="button" onclick="plus()">MULTIPLY</button>
+			<button type="button" onclick="plus()">DIVIDE</button>
+			<button type="button" onclick="minus()">SUBTRACT</button>
+		</form>
+	</div>
+
+	<script type="text/javascript">
+		function plus(){ 
+			var num1 = document.getElementById("num1"). value; // where did "num1" come from? the id in the FORM element
+			var num2 = document.getElementById("num2"). value;
+			var sum = Number(num1) + Number(num2) // this holds their sum
+			document.getElementById("result").innerHTML = ("The sum is:" + sum);
+		}
+
+		function minus(){ 
+			var num1 = document.getElementById("num1"). value; // where did "num1" come from? the id in the FORM element
+			var num2 = document.getElementById("num2"). value;
+			var difference = Number(num1) - Number(num2) // this holds their sum
+			document.getElementById("result").innerHTML = ("The difference is:" - minus);
+		}
+	</script>
+</body>
+</html>
